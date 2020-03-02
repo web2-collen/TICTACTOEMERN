@@ -1,0 +1,25 @@
+.user-list {
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.user-list th {
+  background: #000;
+  color: white;
+}
+
+.user-list tr:nth-child(even) {
+  background: lightblue;
+}
+
+.userForm {
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+}
+
+input{
+  padding: .5em;
+  margin: .5em;
+}

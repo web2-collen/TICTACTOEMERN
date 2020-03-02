@@ -1,0 +1,55 @@
+*, *::after, *::before {
+  
+  box-sizing: border-box;
+}
+
+:root {
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * .9);
+}
+
+body {
+  margin: 0;
+}
+
+.border {
+  width: 100vw;
+  height: 70vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto)
+}
+
+.board {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.board:first-child,
+.board:nth-child(2),
+.board:nth-child(3) {
+  border-top: none;
+}
+
+.board:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.board:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.board:last-child,
+.board:nth-child(8),
+.board:nth-child(7) {
+  border-bottom: none;
+}

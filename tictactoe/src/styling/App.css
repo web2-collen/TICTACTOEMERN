@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.5)) cover center no-repeat;
+  background-attachment: fixed;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 30vh ;
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn-game {
+  padding: .5em;
+  width: 10em;
+  background: #fcfcfc;
+  color: #000;
+  font-family: cambri;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+
+.btn-players {
+  padding: .5em;
+  width: 10em;
+  background: #fcfcfc;
+  color: #000;
+  font-family: cambri;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+
+.board-container {
+  background-color: #282c34;
+  /* width: 50vw; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+.player-container {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  min-height: 70vh;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+.playerForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
